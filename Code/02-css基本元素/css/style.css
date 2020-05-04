@@ -1,0 +1,14 @@
+@charset "utf-8"
+
+a,
+p {
+  color: red;
+}
+
+p {
+  font-size: 32px;
+}
+div {
+  font-size: 32px;
+  background-color: red;
+}
