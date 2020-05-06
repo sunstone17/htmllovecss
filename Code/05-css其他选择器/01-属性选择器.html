@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [title] {
+        color: #f00;
+      }
+
+      [title="one div el"] {
+        background-color: #0f0;
+      }
+
+      [title*="one"] {
+        font-size: 25px;
+      }
+      /* 和类选择器等同 */
+      [class~="one"] {
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div title="one div el">div元素</div>
+    <p title="p el">怕元素</p>
+    <p title="p one">怕元素2</p>
+    <span class="one" title="one span el">斯帕曼</span>
+  </body>
+</html>
