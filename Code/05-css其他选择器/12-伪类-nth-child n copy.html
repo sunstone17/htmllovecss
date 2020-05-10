@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 偶数 */
+      p:nth-child(2n) {
+        color: red;
+      }
+
+      /* 这个是交集
+       * 首先是P元素
+       同时是 前三个子元素
+       */
+      p:nth-child(-n + 3) {
+        color: green;
+      }
+
+      /* 后代，p
+        p后面的前两个元素 */
+      p :nth-child(-n + 2) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>位子内容1</p>
+      <p>位子内容2</p>
+      <p>位子内容3</p>
+      <p>位子内容4</p>
+      <p>位子内容5</p>
+      <p>位子内容6</p>
+      <p>位子内容7</p>
+      <p>位子内容8</p>
+      <p>位子内容9</p>
+      <p>位子内容10</p>
+      <p>位子内容11</p>
+      <p>位子内容12</p>
+    </div>
+    <p>
+      <span>
+        test1
+      </span>
+      <span>
+        test2
+      </span>
+      <span> test3 </span
+      ><span>
+        test4
+      </span>
+    </p>
+  </body>
+</html>

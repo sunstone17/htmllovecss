@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 相同类型计算个数 */
+      p:nth-of-type(3) {
+        color: red;
+      }
+
+      p:nth-child(3) {
+        color: blue;
+      }
+      /* 只计算p元素的个数 */
+      p:nth-last-of-type(-n + 3) {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>位子内容1</p>
+      <div>test</div>
+      <p>位子内容2</p>
+      <p>位子内容3</p>
+      <p>位子内容4</p>
+      <p>位子内容5</p>
+      <p>位子内容6</p>
+      <p>位子内容7</p>
+      <p>位子内容8</p>
+      <p>位子内容9</p>
+      <p>位子内容10</p>
+      <p>位子内容11</p>
+      <div>test</div>
+      <p>位子内容12</p>
+    </div>
+  </body>
+</html>
