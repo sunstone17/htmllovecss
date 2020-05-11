@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        color: red;
+      }
+
+      .box2 {
+        color: green;
+      }
+      .box3 {
+        color: hotpink;
+      }
+      /*
+        相同选择器，最后面的生效
+        不同选择器
+        !important 10000
+        inline style：1000
+        id：100
+        类、属性：10
+        元素：1
+      */
+      #main {
+        color: orange;
+        font-size: 30px;
+      }
+      div {
+        color: hotpink;
+        font-size: 20px !important;
+      }
+      /* 这里不能生效，因为这里没有id选择器权重更大的 */
+      .box1.box2.box3.box4.box5.box6.box7.box8.box9.box10.box11.box12{
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1 box2 box3">哈哈哈哈</div>
+
+    <div id="main" class="box2">嘻嘻嘻嘻嘻</div>
+
+    <div id="main" class="box1 box2 box3 box4 box5 box6 box7 box8 box9 box10 box11 box12">哈哈哈哈</div>
+  </body>
+</html>
