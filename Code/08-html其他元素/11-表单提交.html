@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://www.baidu.com">
+      <fieldset>
+        <legend>必填信息</legend>
+        <div>
+          <span>手机：</span>
+          <input type="text" maxlength="13" name="phone" placeholder="手机号" />
+        </div>
+        <div>
+          <span>密码：</span>
+          <input type="password" placeholder="密码" name="password" autofocus />
+        </div>
+        <div>
+          <span>验证码：</span>
+          <input type="text" placeholder="输入验证码" />
+          <button>获取验证码</button>
+          <input type="button" value="获取验证码2" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>选填信息</legend>
+        <div>
+          <span>照片：</span>
+          <input type="file" />
+        </div>
+        <div>
+          <span>性别：</span>
+          男<input type="radio" name="sex" value="male" checked /> 
+          女<input
+            type="radio"
+            name="sex"
+            value="female"
+          />
+        </div>
+
+        <div>
+          <span>爱好：</span>
+          dota2<input type="checkbox" value="dota2" name="hobbies"/> 
+          bilibili<input type="checkbox" value="bilib" name="hobbies"/>
+        </div>
+        <div>
+          <span>学历：</span>
+          <select name="education">
+            <option>1</option>
+            <option>2</option>
+            <option selected>3</option>
+            <option>4</option>
+          </select>
+        </div>
+
+        <div>
+          <span>简历：</span>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

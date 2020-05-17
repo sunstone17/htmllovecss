@@ -16,11 +16,11 @@
         <legend>必填信息</legend>
         <div>
           <span>手机：</span>
-          <input type="text" placeholder="手机号" />
+          <input type="text" maxlength="13" disabled placeholder="手机号" />
         </div>
         <div>
           <span>密码：</span>
-          <input type="password" placeholder="密码" />
+          <input type="password" placeholder="密码" autofocus/>
         </div>
         <div>
           <span>验证码：</span>
@@ -38,7 +38,7 @@
         </div>
         <div>
           <span>性别：</span>
-          男<input type="radio" name="sex" /> 女<input type="radio" name="sex" />
+          男<input type="radio" name="sex" checked /> 女<input type="radio" name="sex" />
         </div>
 
         <div>
@@ -50,7 +50,7 @@
           <select>
             <option>1</option>
             <option>2</option>
-            <option>3</option>
+            <option selected>3</option>
             <option>4</option>
           </select>
         </div>
@@ -65,6 +65,7 @@
         前提2：在form中
         -->
       <input type="reset">
+      <input type="submit">
   </form>
   </body>
 </html>
