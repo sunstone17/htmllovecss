@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <style>
+      .phone {
+        position: relative;
+        margin-left: 300px;
+      }
+
+      .phone .code {
+        position: absolute;
+        border: 1px solid #eaeaea;
+        margin: 5px 5px 0;
+
+        top: 27px;
+        /* 绝对定位下的居中 */
+        left: 0;
+        /* 相对自己移动50% */
+        transform: translate(-50%);
+        margin-left: 50%;
+      }
+
+      .phone .code span {
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="phone" href="#">
+      <span>手机考拉</span>
+      <span class="code">
+        <img src="./imgs/qrcode.png" alt="" />
+        <span>新人下载APP</span>
+        <span>领1000元满减红包</span>
+      </span>
+    </a>
+  </body>
+</html>
