@@ -13,6 +13,7 @@
       }
 
       .phone .code {
+        display: none;
         position: absolute;
         border: 1px solid #eaeaea;
         margin: 5px 5px 0;
@@ -31,16 +32,40 @@
         text-align: center;
         margin-top: 5px;
       }
+
+      .arrow {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border-top: 1px solid #eaeaea;
+        border-left: 1px solid #eaeaea;
+        transform: rotate(45deg);
+        background-color: #fff;
+
+        top: -11px;
+
+        /* 包含块居中定位 */
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      /* 显示 */
+      .phone span:nth-child(1):hover+.code {
+        display:inline;
+      }
     </style>
   </head>
   <body>
     <a class="phone" href="#">
       <span>手机考拉</span>
       <span class="code">
+        <span class="arrow"></span>
         <img src="./imgs/qrcode.png" alt="" />
         <span>新人下载APP</span>
         <span>领1000元满减红包</span>
       </span>
     </a>
+
   </body>
 </html>
