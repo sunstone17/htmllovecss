@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* 广告 */
+#header .ad {
+  overflow: hidden;
+  min-width: 1100px;
+  margin: 0 auto;
+}
+
+#header .ad img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* 左侧导航 */
+#header .nav {
+  height: 30px;
+  line-height: 30px;
+  background-color: #000;
+}
+
+#header .nav-left .welcome {
+  float: left;
+}
+
+#header .nav-left .account {
+  float: left;
+}
+
+#header .nav a {
+  color: #999;
+  margin-left: 30px;
+  display: inline-block;
+  height: 30px;
+}
+
+#header .nav a:hover {
+  color: #fff;
+}
+
+#header .nav-right,
+#header .nav-right .group1,
+#header .nav-right .group2 {
+  float: right;
+}
+
+#header .nav .group1 {
+  margin-right: 20px;
+}
+
+/* Group2 */
+#header .nav .group2 a {
+  margin-left: 0;
+  height: 30px;
+  padding: 0 12px;
+  float: left;
+}
+
+#header .nav .group2 a:hover {
+  background-color: #fff;
+  color: #ff1e32;
+}
+
+/* Group2 i */
+
+#header .nav .group2 i {
+  /* 向下的箭头 */
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 4px solid #999;
+  /* 将其他方向的箭头透明 */
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  /* 调整位置 */
+  position: relative;
+  top: 2px;
+  /* 动效 */
+  transition: transform 200ms ease-in;
+  transform-origin: center 2px;
+}
+
+#header .nav .group2 a:hover i {
+  transform: rotate(180deg);
+  border-top-color: #ff1e32;
+}
+
+/* logo */
+#header .operation {
+  position: relative;
+  height: 100px;
+  /* background-color: orange; */
+}
+/* 图片垂直方向居中 */
+#header .operation img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  /* top: 50%;
+  transform: translate(0, -50%); */
+}
+
+#header .operation .search {
+  position: relative;
+  float: right;
+  width: 403px;
+  border: 2px solid #ff2337;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 6px 39px 6px 30px;
+  
+  margin-right: 10px;
+
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#header .operation .search input {
+  height: 24px;
+  width: 380px;
+}
+#header .operation .search input::placeholder {
+  font-style: italic;
+}
+
+#header .operation .search i {
+  position: absolute;
+  background-image: url("../img/kl-sprite-01.png");
+  background-position: -466px -667px;
+  width: 14px;
+  height: 14px;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+#header .operation .search span {
+  position: absolute;
+  height: 40px;
+  width: 60px;
+
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  margin: auto 0;
+  border-radius: 40px;
+
+  background: url("../img/icon-search.png") no-repeat center center #ff2337;
+}
+
+#header .operation .cart {
+  position: relative;
+  float: right;
+  /* background-color: #f0f; */
+  width: 106px;
+  height: 36px;
+
+  top: 50%;
+  transform: translate(0, -50%);
+
+  margin-right: 100px;
+  margin-left: 30px;
+  border: 2px solid #ff2337;
+  border-radius: 36px;
+}
+
+#header .operation .cart span {
+  position: absolute;
+  right: 6px;
+  padding:0 6px;
+  font-size: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#header .operation .cart i{
+  background-image: url("../img/icon-aside-right-cart-active.png");
+  width: 20px;
+  height: 20px;
+  position:absolute;
+
+  left: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
+
+}
